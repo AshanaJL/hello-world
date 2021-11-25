@@ -1,0 +1,258 @@
+
+body{
+    background-color: black;
+    font-family: "GothamLight";
+    color: rgb(173, 165, 165);
+    
+}
+
+@font-face {
+    font-family: "GothamBold";
+    src: url("assets/font/Gotham-Font/GothamBold.ttf");
+}
+
+@font-face {
+    font-family:  "GothamLight" ;
+    src: url("assets/font/Gotham-Font/GothamLight.ttf");
+}
+
+.sidebar{
+    width:10%;; 
+    height: 100vh; 
+    position:absolute; 
+    top:0; 
+    left:0;
+    background-color: black;;;
+    z-index: 10; 
+    padding-top: 20px; 
+    overflow: hidden;
+    
+}
+.bottombar{
+    display:none;
+}
+.sideContainer{
+    
+    height: 60%; 
+    width: 100%; 
+    position: absolute; 
+    top: 100px; 
+    display:flex; 
+    flex-direction: column; 
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.Option{
+    width: 100%;
+    height: 30px;
+    display: flex; 
+    align-items: center;
+    background-color: dimgray;
+    color: white; 
+    padding: 10px;
+    border-radius: 2px;
+}
+.liked{
+    background-color: black;
+}
+
+.header{
+    
+    color: white;
+    background-color: rgba(255,255,255,0.2);
+    width: 100%; ; 
+    height: 350px;
+    display:grid;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;;
+}
+
+.about{
+    font-family: "GothamLight";
+    font-size:small;
+    margin-left: 10px;
+    padding-left: 10px;
+    color: rgb(232, 244, 237);
+    ;
+    
+    
+}
+
+.together{
+    display:flex;
+    flex-direction: column; 
+    justify-content: center;;
+}
+
+.main{
+    position: absolute; 
+    width: 100%; 
+    height:calc(100% - 75px); 
+    left: 11%; 
+    box-shadow: 0px 0px 40px 40px #000000;;
+    overflow-x: hidden;
+}
+.image{
+    width: 250px; 
+    height: 250px;
+    margin-left: 30px;
+    box-shadow: 5px 5px 10px 5px rgba(40, 40, 40, 0.3);
+}
+.controls{
+    width: 100%;
+    display: flex;  
+    align-items: center;;
+
+}
+
+.playButton{
+    width: 80px;
+    margin: 20px;
+    
+}
+
+.playButton:hover{
+    transform: scale(1.2); 
+}
+
+.likeButton{
+    width: 40px;
+    filter: brightness(100);
+}
+
+.likeButton:hover{
+    transform: scale(1.2); 
+    
+}
+
+.songList{
+    width: 100%; 
+    color: rgb(173, 165, 165);;;
+
+    
+    padding: 10px;
+    padding-left: 35px;;
+
+}
+.names{
+    font-family: "GothamBold";
+    font-size: 5em;
+    letter-spacing: -5px;
+    transform: scaleY(1.002);
+    padding-left: 10px; 
+    text-shadow: 5px 5px 5px rgba(78, 75, 75, 0.424);
+    
+}
+
+.songPicture{
+    width: 50px; 
+    height: 50px;
+}
+.smallDiv{
+    
+    display:flex; 
+    justify-content: flex-start;
+    align-items: flex-end;
+    width: fit-content;
+
+}
+
+
+.List{
+    padding: 3px;
+}
+.headings{
+    display:grid; 
+    width: 80%; 
+    grid-template-columns: 0.2fr 3fr 3fr 1.5fr 2fr;
+    align-items: center;
+    padding: 5px;
+    padding-left: 10px;;
+    font-family: "GothamLight";
+    color:rgb(232, 244, 237);
+    font-size: small;
+}
+.whiteLine{
+    color:rgba(255, 255, 255, 0.034);
+    width: 92%;
+    margin-left: -10px;
+
+}
+
+.ROW{
+    width: 80%; 
+    color: rgb(173, 165, 165);;;
+    padding: 5px;
+    padding-bottom: 2px;;
+    padding-left: 10px;;
+    display:grid; 
+    grid-template-columns: 0.2fr 3fr 3fr 1.5fr 2fr;
+    align-items: center;
+    
+}
+
+.ROW:hover{
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 3px;;
+}
+
+.artistName{
+    font-family: "GothamLight";
+    letter-spacing: -0.5px;
+    font-size: small;
+    color:rgb(173, 165, 165);
+}
+
+@font-face {
+    font-family: "GothamBlack";
+    src: url("assets/font/Gotham-Font/Gotham-Black.otf");
+}
+.TITLE{
+    color: white;
+    font-family: "GothamLight";
+    font-weight: bold;
+}
+
+.rightbar{
+    position: fixed;
+    width: 20%; 
+    lefT: 85%;
+    top:-10px;
+    height: 130vh; 
+    background-color: rgb(40, 40, 40);
+    z-index: 10;
+}
+
+.DURATION{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center;;
+    ;
+
+}
+
+.likedButton{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    filter: brightness(100); 
+
+}
+
+.playing{
+    position:fixed; 
+    bottom: 0; 
+    width: 100%; 
+    height: 100px;
+    z-index: 30; ;
+    background-color: rgb(24, 24, 24);
+    display:flex; 
+    justify-content: space-between;
+    align-items: center;;
+}
+
+#id{
+    background-color: rgb(24, 24, 24);
+    color: white;
+}

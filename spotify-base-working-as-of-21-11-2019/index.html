@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content= "#000000">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="phoneStyles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="icon"> <img src="assets//icon.png"></div>
+    <div class="sideContainer">
+        <div class="Option home"> Home</div>
+        <div class="Option liked">Liked songs</div>
+    </div>
+    </div>
+    <div class="background" id="backgroundCol">
+        <div class="container">
+        <div class="greeting">Good day!</div>
+        <div class="playlistsContainer" id="containers">
+            <script src= "playlist.js"></script>
+        </div>
+        </div class="BestArtist"> <span class="BestArtists">Best Of Artists</span>
+        <div class="Container" id="artistsCont">
+            <script src="artists.js"></script>
+        </div>
+        <div class="Trending">
+            <span class="BestArtists Popular"> Popular and trending</span>
+            <div class="Container" id="trendCont">
+            <script src="trending.js"></script>
+        </div>
+        </div>
+        <div class="Made for you">
+            <span class="MFU"> Made for you </span>
+            <span class="recommended">Get better recommendations the more you listen.</span>
+        </div>
+        <div class="Editor's choice">
+        </div>
+    </div>
+    </div>
+
+    <script src="index.js"></script>
+    <script>
+        if('serviceWorker' in navigator){
+            navigator.serviceWorker.register('/sw.js');
+        }
+    </script>
+    
+    
+</body>
+</html>

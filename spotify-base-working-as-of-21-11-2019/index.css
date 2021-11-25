@@ -1,0 +1,273 @@
+body{
+    background-color: black;
+    overflow-x: hidden;
+    font-family: "GothamLight";
+    color: white;
+    
+}
+
+@font-face {
+    font-family: "GothamBold";
+    src: url("assets/font/Gotham-Font/GothamBold.ttf");
+}
+
+@font-face {
+    font-family: "GothamLight";
+    src: url("assets/font/Gotham-Font/GothamLight.ttf");
+}
+
+.greeting{
+    font-family: "GothamBold";
+    font-size: 2.5em;
+    padding: 20px;
+    margin-top: -45px;
+    letter-spacing: -2px;;
+}
+
+.playing{
+    position:fixed; 
+    bottom: 0; 
+    width: 100%; 
+    height: 100px;
+    z-index: 30; ;
+    background-color: rgb(24, 24, 24);
+    display:flex; 
+    justify-content: space-between;
+    align-items: center;;
+}
+
+
+.BestArtists{
+    font-family:"GothamBold"; 
+    font-size: 2em;
+    letter-spacing: -2px;
+    padding: 30px;
+    
+}
+.BestArtist{
+    padding-top: 10px;
+}
+
+.sidebar{
+    max-width:10%;
+    min-width: 150px;; 
+    min-height: 100vh; 
+    
+    position:fixed; 
+    top:0; 
+    left:0;
+    background-color: black;;;
+    z-index: 10; 
+    padding-top: 20px; 
+    overflow: hidden;
+    
+}
+
+.sideContainer{
+    
+    height: 60%; 
+    width: 100%; 
+    position: absolute; 
+    top: 100px; 
+    display:flex; 
+    flex-direction: column; 
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.Option{
+    width: 100%;
+    height: 30px;
+    display: flex; 
+    align-items: center;
+    background-color: dimgray;
+    color: white;; 
+    padding: 10px;
+    border-radius: 2px;
+}
+.liked{
+    background-color: black;
+}
+.background{
+    position:absolute; 
+    top:0; 
+    left:11%; ;
+    width: 100%; 
+    height: fit-content;
+    background-image: linear-gradient(to bottom, rgb(43, 71, 85),  rgb(20,20,20) 55%);
+}
+
+.background{
+    transition: background-image 2s ease-in;
+}
+.container{
+    margin-top: 5%;
+    color: white; 
+    padding: 10px;
+}
+
+.Playlist{
+    width: 92%; 
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.2);
+    display:grid; 
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    border-radius: 10px;;
+    display:none;; 
+}
+
+.Playlist:hover{
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.playlistsContainer{
+    width: 90%;
+    display:grid; 
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr))  ;
+    margin-left: 10px;;
+}
+.IImage{
+    width:  100px; 
+    height: 100px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.Container{
+    width: 90%; 
+    display:grid; 
+    grid-template-columns: repeat(auto-fit, minmax(218px, 1fr));
+
+}
+
+.Artist{
+    width: 218px;; 
+    height: 300px; 
+    background: rgba(56, 53, 53, 0.2); 
+    display: grid;
+    grid-template-rows: 4fr 2fr ;
+    border-radius: 2px;
+    margin: 20px;
+    justify-items: center;
+}
+
+.descDiv{
+    display:flex; 
+    width: 95%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.Face{
+    width: 180px; 
+    height: 180px;
+    border-radius: 5px 5px 5px 5px; 
+    margin-top:10px;
+      
+}
+
+.About{
+    font-size: small; 
+    margin: 10px;
+    margin-bottom: 2px;
+    color:rgb(136, 130, 130);
+}
+.Name{
+    margin: 10px;
+    margin-top: 2px;;
+    font-family: "GothamBold";
+}
+
+.Artist:hover{
+    background-color: rgba(134, 133, 133, 0.6);
+}
+
+#trendCont{
+    display:flex; 
+    justify-content: flex-start;;
+}
+
+#Playlist1, #Playlist5{
+    opacity: 100%; 
+}
+
+
+
+
+@media screen and (max-width: 1176px) {
+    .PLaylist3, .PLaylist7, .PLaylist4, .PLaylist8{
+        display: none;
+    }
+    
+
+    
+}
+
+
+
+@media only screen and (max-width: 1200px) {
+    .background{
+        left: 150px;;
+        
+    }
+    .sidebar{
+        width: 100px;
+       
+    }    
+    .icon{
+       opacity: 0;;
+
+    }
+
+    
+}
+
+
+
+#Playlist0, #Playlist4{
+    display: grid;
+}
+
+
+@media only screen and (min-width: 809px){
+    #Playlist1, #Playlist5{
+        display: grid;; 
+    }
+}
+
+@media only screen and (min-width: 1194px){
+    #Playlist0, #Playlist1, #Playlist2, #Playlist4, #Playlist5, #Playlist6{
+        display: grid;; 
+    }
+}
+
+@media only screen and (min-width: 1577px){
+    .Playlist{
+        display: grid;; 
+    }
+}
+
+@media only screen and (max-width: 733px) and (min-width:425px){
+    #Artistey3, #Artistey4, #Artistey5{
+        display:none;
+        
+    }
+}
+
+@media only screen and (max-width: 1454px) and (min-width: 968px){
+    #Artistey1{
+        display:none;
+    }
+    }
+@media only screen and (max-width: 1213px) and (min-width: 968px){
+    #Artistey2{
+        display:none;
+    }
+}
+
+
+
+
+

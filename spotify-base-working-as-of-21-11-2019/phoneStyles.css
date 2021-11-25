@@ -1,0 +1,66 @@
+
+@media only screen and (max-width: 430px){
+    .body{}
+    
+    @font-face {
+        font-family: "GothamLight";
+        src: url("assets/font/Gotham-Font/GothamLight.ttf");
+    }
+    .sidebar{
+        display:none;
+    }
+    .background{
+        left:0%;
+        min-width: 100%;
+        max-width: fit-content;
+        background-image: linear-gradient(to bottom , rgb(43, 71, 85),  rgb(20,20,20) 10%)
+    }
+    .container{
+        padding-top: 30px;
+    }
+    .Playlist{
+        height: 50px;
+        display:grid; 
+        background-color: rgb(20, 20, 20);
+        font-size: small;
+        border-radius:0; 
+        font-family: "GothamLight";
+        font-size: xx-small;
+        border-radius: 0px;;
+    }
+    #Playlist2, #Playlist7{
+        display: none;
+    }
+    .IImage{
+        width: 50px; 
+        height: 50px; 
+        border-radius: 0;;
+    }
+    .playlistsContainer{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .About{
+        display:none;
+    }
+
+    .Container{
+        display:flex;
+        overflow-x: scroll;
+    }
+    .Artist{
+        height: fit-content;
+        display:grid;
+    }
+    #trendCont{
+        overflow-x: scroll;
+    }
+
+    .BestArtists{
+        font-size: 1.2em;
+        padding: 40px;
+        margin-top: 20px;;
+    }
+
+
+
+}
