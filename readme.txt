@@ -1,5 +1,6 @@
 Project Name: Spotify Clone 
 
+This is my first front-end project done completely for the sake of learning HTML CSS and JAVASCRIPT
 ---------------------------------------------------------------------------------------------------------------
  This is a front-end project that i took up to learn front-end web development. Ive tried to mimic the working
  of the Spotify web player using only HTML, CSS and Javascript. Most of the playlists are just placeholders and 
